@@ -9,7 +9,7 @@ def rescale_frame(frame, scale):
     dimensions = (width, height)
     return cv2.resize(frame, dimensions, interpolation=cv2.INTER_AREA)
 
-model = YOLO('C:\\Users\\bilgi\\OneDrive\\Masaüstü\\code\\AI\go br\\AI v3\\weights\\best.pt')
+model = YOLO('your model path')
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(device)
